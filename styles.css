@@ -8,7 +8,7 @@
 :root {
   /* Core Color Palette */
   --bg-main: #8f2936;
-  --bg-card: #4c8d99;
+  --bg-card: #996d1b;
   --bg-card-hover: #3d7984;
   --bg-card-alt: rgba(10, 30, 38, 0.65);
   --bg-glass: rgba(119, 9, 73, 0.85);
@@ -24,10 +24,10 @@
   --text-dim: #CCFBF1;
 
   /* Accent Colors */
-  --accent-blue: #3B82F6;
+  --accent-blue: #a23bf6;
   --accent-blue-hover: #2563EB;
   --accent-blue-subtle: rgba(134, 31, 138, 0.12);
-  --accent-cyan: #38BDF8;
+  --accent-cyan: #38f858;
   --accent-emerald: #10B981;
   --accent-emerald-subtle: rgba(16, 185, 129, 0.12);
   --accent-amber: #F59E0B;
