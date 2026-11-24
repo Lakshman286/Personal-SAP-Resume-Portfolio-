@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Golla Varalakshman Naidu | SAP ABAP Developer & Cloud Back-End Specialist</title>
+  <meta name="description" content="Portfolio of Golla Varalakshman Naidu — Aspiring SAP ABAP Developer specializing in Core ABAP, DDIC design, ALV Reports, Open SQL, and SAP ABAP Cloud." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sap-horizon-theme">
+  <!-- Enterprise System Boot Screen -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="typing-loader">
+      <div class="loader-content">
+        <div class="sap-system-badge">
+          <span class="system-led"></span>
+          <span>SAP ABAP</span>
+        </div>
+        <div class="typing-container">
+          <div class="typing-text">
+            <span class="typed-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <div class="loader-subtitle">Aspiring SAP ABAP Developer</div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="progress-status">
+            <span class="progress-phase" id="loaderPhase">Initializing DDIC Dictionary...</span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Application Container -->
+  <div id="main-content" style="display: none;">
+    <!-- Background Technical Grid & Ambient Parallax Glows -->
+    <div id="bg-shapes" aria-hidden="true">
+      <div class="bg-grid-overlay"></div>
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+      <div class="shape s4"></div>
+    </div>
+
+    <!-- Top Student Notification Strip -->
+    <div class="student-status-strip">
+      <span class="badge-status-dot"></span>
+      <span>🎓 B.Tech Final-Years (2023–2027) • Open for Entry-Level SAP ABAP Developer Roles &amp; Internships</span>
+    </div>
+
+    <!-- STUDENT PORTFOLIO NAVIGATION BAR -->
+    <header class="student-navbar" id="shellHeader">
+      <div class="nav-container">
+        <a href="#hero" class="student-brand">
+          <span class="brand-avatar-badge">&lt;GVN /&gt;</span>
+          <div class="brand-text">
+            <span class="brand-name">Golla Varalakshman Naidu</span>
+            <span class="brand-subtitle"><span class="status-indicator"></span> B.Tech Student &amp; SAP ABAP Developer</span>
+          </div>
+        </a>
+
+        <nav class="shell-nav-menu" id="shellNavMenu" aria-label="Portfolio Navigation">
+          <a class="nav-link active" href="#about"><i class="fas fa-user-graduate"></i> <span>About Me</span></a>
+          <a class="nav-link" href="#skills"><i class="fas fa-code"></i> <span>Skills</span></a>
+          <a class="nav-link" href="#certifications"><i class="fas fa-certificate"></i> <span>Certification</span></a>
+          <a class="nav-link" href="#portfolio"><i class="fas fa-laptop-code"></i> <span>Project</span></a>
+          <a class="nav-link" href="#resume"><i class="fas fa-graduation-cap"></i> <span>Education</span></a>
+          <a class="nav-link" href="#contact"><i class="fas fa-paper-plane"></i> <span>Contact</span></a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn-resume-header" href="documents/Lakshman_SAP.pdf" download="Golla_Varalakshman_Naidu_Resume.pdf" title="Download Resume">
+            <i class="fas fa-file-pdf"></i>
+            <span>Resume</span>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION (Student Welcome) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-inner-container">
+        <div class="hero-content">
+          <div class="avatar-wrapper">
+            <!-- Profile image -->
+            <img src="hero-bg.png" onerror="this.onerror=null; this.src='hero-bg.png';" alt="Golla Varalakshman Naidu" class="profile-img" width="180" height="180" loading="eager" fetchpriority="high">
+            <div class="sap-certified-badge-ribbon" title="SAP Certified Back-End Developer - ABAP Cloud">
+              <i class="fas fa-award"></i>
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <div class="hero-greeting-pill">
+              <span>👋 Welcome to my portfolio</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight-name">Golla Varalakshman Naidu</span>
+            </h1>
+            <p class="hero-subtitle">Aspiring SAP ABAP Developer &amp; B.Tech ECE Student (2023–2027)</p>
+            <p class="hero-description">
+              Undergraduate engineering student at Chalapathi Institute of Engineering and Technology, passionate about enterprise back-end development with Core ABAP, relational Data Dictionary (DDIC) engineering, ALV grid reporting, and modern SAP Cloud practices.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#portfolio"><i class="fas fa-laptop-code"></i> View My Project</a>
+              <a class="btn secondary" href="https://www.credly.com/badges/3f908b22-cb20-4ac2-b817-a765477d8c02" target="_blank" rel="noopener">
+                <i class="fas fa-certificate"></i> SAP Certification
+              </a>
+              <a class="btn highlight-pdf-btn" href="documents/Lakshman_SAP.pdf" download="Golla_Varalakshman_Naidu_Resume.pdf">
+                <i class="fas fa-file-pdf"></i> Download Resume
+              </a>
+            </div>
+
+            <div class="hero-contact-strip">
+              <span class="strip-item"><i class="fas fa-envelope"></i> naidugolla286@gmail.com</span>
+              <span class="strip-divider">•</span>
+              <span class="strip-item"><i class="fas fa-phone"></i> +91 8179813994</span>
+              <span class="strip-divider">•</span>
+              <span class="strip-item"><i class="fas fa-location-dot"></i> Andhra Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Key Highlight Cards -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="stat-data">
+              <span class="number">2023 – 2027</span>
+              <span class="label">B.Tech ECE • CIET Guntur</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-award"></i></div>
+            <div class="stat-data">
+              <span class="number">SAP Certified</span>
+              <span class="label">ABAP Cloud Back-End (2026)</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-database"></i></div>
+            <div class="stat-data">
+              <span class="number">DDIC Tables, ALV Reports, Smart Forms, Subroutines, Report to Report Calling</span>
+              <span class="label">Agri Management Project</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="stat-data">
+              <span class="number">Open for Roles</span>
+              <span class="label">Internships &amp; Entry-Level Trainee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN BODY SECTIONS -->
+    <main id="siteMain">
+      
+      <!-- 1. ABOUT ME & STUDENT PROFILE -->
+      <section id="about" class="section-wrapper">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="badge-tag"><i class="fas fa-user-graduate"></i> Student Profile</div>
+            <h2>About Me &amp; My Developer Journey</h2>
+            <p class="section-intro">
+              Curious, disciplined undergraduate engineering student eager to learn, build, and contribute to enterprise development teams.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="summary-card">
+              <div class="quote-accent"><i class="fas fa-quote-left"></i></div>
+              <p class="lead-summary">
+                I am an aspiring SAP ABAP Developer currently pursuing my B.Tech in Electronics &amp; Communication Engineering at Chalapathi Institute of Engineering and Technology, Guntur (2023–2027).
+              </p>
+              <p class="secondary-summary">
+                Combining my academic engineering foundation with intensive practical specialization in SAP ABAP, I have developed strong competency in Data Dictionary (DDIC) relational design, Classical, Interactive &amp; ALV Reporting, Open SQL query performance, and modularization. I have also earned the official SAP SE certification in ABAP Cloud. I am actively seeking an entry-level developer or trainee role to contribute to real-world projects and grow alongside experienced developers.
+              </p>
+              
+              <div class="competency-matrix">
+                <span class="comp-chip"><i class="fas fa-database"></i> Data Dictionary (DDIC)</span>
+                <span class="comp-chip"><i class="fas fa-code"></i> Core ABAP</span>
+                <span class="comp-chip"><i class="fas fa-table"></i> ALV Reports</span>
+                <span class="comp-chip"><i class="fas fa-cubes"></i> OOP ABAP</span>
+                <span class="comp-chip"><i class="fas fa-terminal"></i> Custom T-Codes</span>
+                <span class="comp-chip"><i class="fas fa-boxes-packing"></i> Packages &amp; TRs</span>
+                <span class="comp-chip"><i class="fas fa-file-invoice"></i> SmartForms</span>
+              </div>
+            </div>
+
+            <div class="sap-architecture-card">
+              <div class="arch-card-header">
+                <span class="led-indicator online"></span>
+                <span>My SAP Architecture Knowledge</span>
+              </div>
+              <div class="architecture-flow">
+                <div class="flow-tier">
+                  <div class="tier-icon"><i class="fas fa-desktop"></i></div>
+                  <div class="tier-info">
+                    <strong>Presentation Layer</strong>
+                    <span>SAP GUI Dialog Screens, Interactive ALV Grids</span>
+                  </div>
+                </div>
+                <div class="flow-connector"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-tier highlighted">
+                  <div class="tier-icon"><i class="fas fa-microchip"></i></div>
+                  <div class="tier-info">
+                    <strong>Application Layer (Core ABAP)</strong>
+                    <span>Open SQL, Subroutines, Function Modules, Business Logic</span>
+                  </div>
+                </div>
+                <div class="flow-connector"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-tier">
+                  <div class="tier-icon"><i class="fas fa-database"></i></div>
+                  <div class="tier-info">
+                    <strong>Database Layer</strong>
+                    <span>Transparent Tables, Relational Views, Search Helps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. TECHNICAL SKILLS WORKBENCH -->
+      <section id="skills" class="section-wrapper">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="badge-tag"><i class="fas fa-tools"></i> Developer Toolkit</div>
+            <h2>Technical Skills &amp; SAP Workbench</h2>
+            <p class="section-intro">
+              Structured technical competencies developed through engineering coursework, dedicated hands-on development, and official SAP SE certification.
+            </p>
+          </div>
+
+          <div class="skills-workbench-layout">
+            <!-- Skill Category Columns -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="cat-icon ddic-icon"><i class="fas fa-database"></i></div>
+                <div>
+                  <h3>Data Dictionary (DDIC)</h3>
+                  <span class="sub-tag">Database Modeling & Referential Integrity</span>
+                </div>
+              </div>
+              <div class="skill-meter">
+                <span class="meter-label-tag"><i class="fas fa-layer-group"></i> DDIC Modeling</span>
+                <span class="meter-val">95% Proficiency</span>
+              </div>
+              <ul class="skill-feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Domains:</strong> Defining data types, lengths, value ranges, and conversion routines.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Data Elements:</strong> Semantic field definitions, labels, and documentation bindings.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Structures & Table Types:</strong> Deep/flat structures for ABAP data transfer.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Views:</strong> Database Views, Projection Views, and Maintenance Views.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>DataBase Tables:</strong> Transparent tables with primary keys & technical settings.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Search Help:</strong> Elementary and collective input help attachments.</li>
+              </ul>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="cat-icon abap-icon"><i class="fas fa-code"></i></div>
+                <div>
+                  <h3>Core ABAP Development</h3>
+                  <span class="sub-tag">Application Logic & Reporting Engines</span>
+                </div>
+              </div>
+              <div class="skill-meter">
+                <span class="meter-label-tag"><i class="fas fa-terminal"></i> ABAP Workbench</span>
+                <span class="meter-val">92% Proficiency</span>
+              </div>
+              <ul class="skill-feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Internal Tables & Work Areas:</strong> Standard, Sorted, and Hashed memory tables.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Classical & Interactive Reports:</strong> Event-driven handling with drill-downs.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>ALV Reports:</strong> Fieldcatalog configuration, sorting, filtering & interactive clicks.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Modularization:</strong> Reusable Subroutines (`FORM/PERFORM`) & Function Modules.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Open SQL:</strong> High-performance queries with `WHERE`, `JOIN`, and `FOR ALL ENTRIES`.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>OOPS & Enhancements:</strong> Classes, Methods, BAdIs, and User Exits.</li>
+              </ul>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="cat-icon enterprise-icon"><i class="fas fa-cogs"></i></div>
+                <div>
+                  <h3>Other SAP Concepts</h3>
+                  <span class="sub-tag">Lifecycle Management & System Tools</span>
+                </div>
+              </div>
+              <div class="skill-meter">
+                <span class="meter-label-tag"><i class="fas fa-shield-halved"></i> Enterprise Tools</span>
+                <span class="meter-val">50% Proficiency</span>
+              </div>
+              <ul class="skill-feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Custom T-Codes:</strong> Transaction management via `SE93` for custom ABAP programs.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Packages:</strong> Modular organization of repository objects in `SE21`.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>TR Management:</strong> Workbench & Customizing Transport Requests (`SE09/SE10`).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>SmartForms:</strong> Dynamic PDF generation, layouts, invoice formatting.</li>
+                <!-- <li><i class="fas fa-check-circle"></i> <strong>ABAP Cloud:</strong> Cloud-ready syntax, RAP fundamentals, and clean coding guidelines.</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. OFFICIAL SAP CERTIFICATION SPOTLIGHT -->
+      <section id="certifications" class="section-wrapper">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="badge-tag verified-badge"><i class="fas fa-check-double"></i> Verified Credential</div>
+            <h2>Official SAP Certification</h2>
+            <p class="section-intro">
+              Official recognition from SAP SE certifying verified mastery in the ABAP RESTful Application Programming (RAP) Model, Core ABAP programming, and Clean Core extension principles for SAP S/4HANA.
+            </p>
+          </div>
+
+          <div class="cert-feature-card">
+            <div class="cert-visual-col">
+              <div class="cert-badge-frame" id="certBadgeFrame" title="Official SAP Badge — Click to View Certificate" style="cursor: pointer;">
+                <img src="sap-certified-badge.png" onerror="this.onerror=null; this.src='sap-certificate.jpg';" alt="SAP Certified – Back-End Developer – ABAP Cloud" class="cert-badge-image" width="180" height="180" loading="eager">
+              </div>
+              <div class="credly-verified-indicator">
+                <i class="fas fa-circle-check"></i> Credly Verified Badge
+              </div>
+              <div class="cert-visual-actions">
+                <button class="btn secondary view-cert-doc-btn" id="openCertModalBtn" type="button">
+                  <i class="fas fa-expand"></i> Inspect Certificate
+                </button>
+                <a class="btn highlight-pdf-btn" href="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf" download="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf" title="Download Official Certificate PDF">
+                  <i class="fas fa-file-pdf"></i> Download PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="cert-body-col">
+              <div class="cert-badges-row">
+                <span class="cert-pill-issuer"><i class="fas fa-building"></i> SAP SE Recognized</span>
+                <span class="cert-pill-issued"><i class="fas fa-calendar-check"></i> Issued: Aug 19, 2026</span>
+                <span class="cert-pill-expires"><i class="fas fa-clock"></i> Expires: Aug 20, 2027</span>
+                <span class="cert-pill-cloud"><i class="fas fa-cloud"></i> ABAP Cloud Track</span>
+              </div>
+
+              <h3 class="cert-title">SAP Certified – Back-End Developer – ABAP Cloud</h3>
+              
+              <div class="cert-official-quote">
+                <p>
+                  "This certification verifies that you are familiar with the core principles of the ABAP programming language and can write simple applications based on the ABAP RESTful Application Programming Model and that you have an overall understanding of the Clean Core principles for creating custom extensions in SAP S/4HANA. It proves that you have a comprehensive knowledge and in-depth skills to participate as a member of a project team in a mentored role."
+                </p>
+                <span class="quote-author">— Official SAP Recognition Statement</span>
+              </div>
+
+              <div class="cert-cta-row">
+                <a class="btn primary" href="https://www.credly.com/badges/3f908b22-cb20-4ac2-b817-a765477d8c02" target="_blank" rel="noopener">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Verify on Credly Acclaim
+                </a>
+                <button class="btn outline" id="openCertModalBtn2" type="button">
+                  <i class="fas fa-certificate"></i> Inspect Full Certificate
+                </button>
+                <a class="btn highlight-pdf-btn" href="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf" download="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf">
+                  <i class="fas fa-file-arrow-down"></i> Download PDF
+                </a>
+                <span class="cert-id-tag">Credential: <code>3f908b22-cb20-4ac2-b817-a765477d8c02</code></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FEATURED STUDENT PROJECT -->
+      <section id="portfolio" class="section-wrapper">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="badge-tag project-status-tag"><i class="fas fa-laptop-code"></i> Featured Student Project</div>
+            <h2>Agri Management System (Pest Advisory &amp; Stock Control)</h2>
+            <p class="section-intro">
+              An end-to-end custom SAP application engineered with custom Dynpro dialog screens, 11 relational DDIC transparent tables, real-time chemical dosage computation routines, automated inventory deduction, and SmartForms billing.
+            </p>
+          </div>
+
+          <div class="enterprise-project-card">
+            <!-- Top Project Banner -->
+            <div class="project-header-banner">
+              <div class="sap-gui-window-titlebar">
+                <div class="left-indicator">
+                  <span class="window-dot close"></span>
+                  <span class="window-dot minimize"></span>
+                  <span class="window-dot maximize"></span>
+                  <span>SAP Easy Access — Screen ZAGRI_PEST (Dynpro 0100)</span>
+                </div>
+                <div class="right-indicator">
+                  <span>Student Capstone Project</span>
+                </div>
+              </div>
+              <div class="project-media-container">
+                <!-- Actual SAP GUI Project Screen -->
+                <img src="pest-advisory-project.png" alt="AGRI MANAGEMENT SYSTEM - SAP GUI Login Screen" class="project-banner-img" loading="lazy">
+                <div class="media-overlay-gradient"></div>
+                <div class="project-floating-tags">
+                  <span class="tag-pill"><i class="fas fa-desktop"></i> SAP Screen: <strong>AGRI MANAGEMENT SYSTEM</strong></span>
+                  <span class="tag-pill"><i class="fas fa-hashtag"></i> T-Code: <strong>ZAGRI_PEST</strong></span>
+                  <span class="tag-pill"><i class="fas fa-user-lock"></i> Auth: <strong>SMID000RJS</strong></span>
+                </div>
+              </div>
+            </div>
+
+          <!-- Project Nav Tabs: DDIC Schema / Technical Implementation / Simulated ALV Output -->
+          <div class="project-interactive-tabs">
+            <button class="proj-tab-btn active" data-projtab="pillars">
+              <i class="fas fa-list-check"></i> 7 Core Architecture Accomplishments
+            </button>
+            <button class="proj-tab-btn" data-projtab="tables">
+              <i class="fas fa-database"></i> 11 Real-Time DDIC Tables (4.5 Data Design)
+            </button>
+            <button class="proj-tab-btn" data-projtab="alvsim">
+              <i class="fas fa-table-cells"></i> Interactive ALV Grid Simulation
+            </button>
+          </div>
+
+          <!-- Tab Content 1: The 7 Core Architectural Bullets (User prompt verbatim) -->
+          <div class="proj-tab-content active" id="projtab-pillars">
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-num">01</div>
+                <div class="pillar-body">
+                  <h4>Custom DDIC Relational Architecture</h4>
+                  <p>Designing <strong>7 custom DDIC transparent tables</strong> with relational keys, domains, and data elements to manage farmer master data and catalog items.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-num">02</div>
+                <div class="pillar-body">
+                  <h4>Direct Purchase Workflows & Inventory Checks</h4>
+                  <p>Developing <strong>ABAP business logic</strong> to handle direct pesticide purchase workflows and perform real-time warehouse inventory checks.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-num">03</div>
+                <div class="pillar-body">
+                  <h4>Advisory Recommendation Engine</h4>
+                  <p>Building an <strong>advisory recommendation engine</strong> utilizing crop-pest mapping tables to suggest verified alternative treatments during stockouts.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-num">04</div>
+                <div class="pillar-body">
+                  <h4>Scientific Dosage & Calculation Routines</h4>
+                  <p>Implementing <strong>calculation routines</strong> to determine exact chemical dosage, acreage coverage, and total invoice amounts.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-num">05</div>
+                <div class="pillar-body">
+                  <h4>Automated Real-Time Stock Deduction</h4>
+                  <p>Integrating <strong>automated stock deduction processes</strong> to update line-item inventory balances upon sales order confirmation.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-num">06</div>
+                <div class="pillar-body">
+                  <h4>Interactive ALV Reporting & Audit Trails</h4>
+                  <p>Developing <strong>interactive ALV reports</strong> for real-time stock monitoring, shortage warnings, and advisory audit trails.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card full-width-pillar">
+                <div class="pillar-num">07</div>
+                <div class="pillar-body">
+                  <h4>Automated SmartForms PDF Document Generation</h4>
+                  <p>Designing <strong>SmartForms</strong> to generate automated PDF billing invoices, customer receipts, and dosage summaries upon order confirmation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 2: The 7 Custom DDIC Transparent Tables Details -->
+          <div class="proj-tab-content" id="projtab-tables">
+            <div class="data-design-spec-box">
+              <div class="data-design-badge">
+                <i class="fas fa-database"></i> 4.5 Data Design Specification
+              </div>
+              <h4 class="data-design-title">SAP Transparent Tables Architecture</h4>
+              <p class="data-design-subtext">
+                The Agri Management System uses SAP transparent tables designed in the ABAP Data Dictionary (<code>SE11</code>) to store relational master records, catalogs, advisory rules, and transactional sales line items with automated inventory deduction:
+              </p>
+
+              <!-- Data Design Spec Table directly from project documentation -->
+              <div class="data-design-table-wrapper">
+                <table class="data-design-table">
+                  <thead>
+                    <tr>
+                      <th>Table</th>
+                      <th>Purpose</th>
+                      <th>Delivery Class / Category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_FARMER</code></td>
+                      <td>Customer / Farmer master</td>
+                      <td><span class="ddic-pill master">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_CROP</code></td>
+                      <td>Crop master</td>
+                      <td><span class="ddic-pill master">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_PESTICIDE</code></td>
+                      <td>Pesticide shop inventory and catalog</td>
+                      <td><span class="ddic-pill inv">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_PEST_CROP</code></td>
+                      <td>Pesticide–crop applicability mapping</td>
+                      <td><span class="ddic-pill map">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_CROP_PEST</code></td>
+                      <td>Crop and pest advisory matrix (primary and alternative pesticide)</td>
+                      <td><span class="ddic-pill matrix">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_RECOMMEND</code></td>
+                      <td>Advisory session log</td>
+                      <td><span class="ddic-pill log">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_FERTILIZER</code></td>
+                      <td>Fertilizer master and inventory</td>
+                      <td><span class="ddic-pill inv">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_FERT_CROP</code></td>
+                      <td>Fertilizer–crop mapping</td>
+                      <td><span class="ddic-pill map">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_SALES_HDR</code></td>
+                      <td>Sales billing header</td>
+                      <td><span class="ddic-pill trans">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_SALES_ITEM</code></td>
+                      <td>Pesticide sales line items and inventory deduction</td>
+                      <td><span class="ddic-pill trans">Transparent Table (Class A)</span></td>
+                    </tr>
+                    <tr>
+                      <td><code class="tbl-name-code">ZAGRI_FERT_SALES_ITEM</code></td>
+                      <td>Fertilizer sales line items and inventory deduction</td>
+                      <td><span class="ddic-pill trans">Transparent Table (Class A)</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Detailed DDIC Cards Catalog -->
+            <div class="ddic-tables-catalog">
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_FARMER</code></div>
+                  <span class="table-cat-badge">Master Data</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Customer / Farmer master</div>
+                <div class="table-desc">Stores farmer profile, verified phone, regional farming cluster, landholding acreage, and seasonal cultivation history. Primary key: <code>FARMER_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_CROP</code></div>
+                  <span class="table-cat-badge">Master Data</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Crop master</div>
+                <div class="table-desc">Master catalog of regional crops, seasonal suitability (Kharif, Rabi, Zaid), typical lifecycle stages, and optimal soil profiles. Primary key: <code>CROP_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_PESTICIDE</code></div>
+                  <span class="table-cat-badge">Shop Inventory</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Pesticide shop inventory and catalog</div>
+                <div class="table-desc">Chemical formulations, active ingredients, package units, retail pricing, and real-time shop stock levels. Primary key: <code>PEST_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_PEST_CROP</code></div>
+                  <span class="table-cat-badge">Relational Mapping</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Pesticide–crop applicability mapping</div>
+                <div class="table-desc">Relational applicability matrix verifying which chemical treatments are legally and biologically authorized for specific crops. Composite key: <code>(PEST_ID, CROP_ID)</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_CROP_PEST</code></div>
+                  <span class="table-cat-badge highlight-cat">Advisory Engine</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Crop and pest advisory matrix (primary and alternative pesticide)</div>
+                <div class="table-desc">Consulted by the recommendation engine: pairs crop pests with primary pesticide regimens and verified substitute chemicals during stockouts. Composite key: <code>(CROP_ID, PEST_ID)</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_RECOMMEND</code></div>
+                  <span class="table-cat-badge">Audit Log</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Advisory session log</div>
+                <div class="table-desc">Historical advisory log preserving session transactions, identified crop pests, recommended formulations, chemical dosages, and sy-datum timestamps. Primary key: <code>REC_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_FERTILIZER</code></div>
+                  <span class="table-cat-badge">Shop Inventory</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Fertilizer master and inventory</div>
+                <div class="table-desc">Nutrient composition (N-P-K), unit bag weights, standard pricing, warehouse inventory counts, and automated reorder alerts. Primary key: <code>FERT_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_FERT_CROP</code></div>
+                  <span class="table-cat-badge">Relational Mapping</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Fertilizer–crop mapping</div>
+                <div class="table-desc">Nutrient dosage guidelines per acre, application timing (basal vs top dressing), and soil compatibility formulas. Composite key: <code>(FERT_ID, CROP_ID)</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_SALES_HDR</code></div>
+                  <span class="table-cat-badge">Sales Transaction</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Sales billing header</div>
+                <div class="table-desc">Billing invoice header recording billing document number, farmer reference, billing date, net gross amount, tax routines, and SmartForms PDF status. Primary key: <code>SALES_ID</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_SALES_ITEM</code></div>
+                  <span class="table-cat-badge highlight-cat">Stock Deduction</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Pesticide sales line items and inventory deduction</div>
+                <div class="table-desc">Pesticide billing line items; upon sales order confirmation, triggers automated stock deduction logic against <code>ZAGRI_PESTICIDE</code>. Composite key: <code>(SALES_ID, POSNR)</code>.</div>
+              </div>
+
+              <div class="table-card">
+                <div class="table-card-top">
+                  <div class="table-name"><code>ZAGRI_FERT_SALES_ITEM</code></div>
+                  <span class="table-cat-badge highlight-cat">Stock Deduction</span>
+                </div>
+                <div class="table-purpose"><strong>Purpose:</strong> Fertilizer sales line items and inventory deduction</div>
+                <div class="table-desc">Fertilizer sales items; executes real-time inventory updates and quantity deduction against <code>ZAGRI_FERTILIZER</code>. Composite key: <code>(SALES_ID, POSNR)</code>.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3: Realistic ALV Grid Simulation -->
+          <div class="proj-tab-content" id="projtab-alvsim">
+            <div class="alv-grid-mockup">
+              <div class="alv-toolbar">
+                <div class="alv-btn-group">
+                  <span class="alv-tool-btn" title="Sort Ascending"><i class="fas fa-arrow-down-a-z"></i></span>
+                  <span class="alv-tool-btn" title="Sort Descending"><i class="fas fa-arrow-up-z-a"></i></span>
+                  <span class="alv-tool-btn" title="Filter"><i class="fas fa-filter"></i></span>
+                  <span class="alv-tool-btn" title="Export to Spreadsheet"><i class="fas fa-file-excel"></i></span>
+                  <span class="alv-tool-btn" title="Print"><i class="fas fa-print"></i></span>
+                </div>
+                <div class="alv-title-label">Program: <strong>ZAGRI_STOCK_MONITOR</strong> | Source Tables: <code>ZAGRI_PESTICIDE</code> & <code>ZAGRI_FERTILIZER</code></div>
+              </div>
+
+              <div class="alv-table-responsive">
+                <table class="alv-table">
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>Material (MATNR)</th>
+                      <th>Description</th>
+                      <th>Plant (WERKS)</th>
+                      <th>Available Qty</th>
+                      <th>Min Threshold</th>
+                      <th>Advisory Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="alv-led green">🟢</span> In Stock</td>
+                      <td><code>PST-CHLR-500</code></td>
+                      <td>Chlorpyrifos 20% EC (500ml)</td>
+                      <td>1001 (AP-GNT)</td>
+                      <td><strong>420 BTL</strong></td>
+                      <td>100 BTL</td>
+                      <td>Standard Direct Dispatch</td>
+                    </tr>
+                    <tr>
+                      <td><span class="alv-led yellow">🟡</span> Low Stock</td>
+                      <td><code>PST-NEEM-1000</code></td>
+                      <td>Cold-Pressed Azadirachtin 1%</td>
+                      <td>1001 (AP-GNT)</td>
+                      <td><strong>45 LTR</strong></td>
+                      <td>50 LTR</td>
+                      <td>Reorder Request Generated</td>
+                    </tr>
+                    <tr>
+                      <td><span class="alv-led red">🔴</span> Stockout</td>
+                      <td><code>PST-SPIN-250</code></td>
+                      <td>Spinosad 45% SC Suspension</td>
+                      <td>1001 (AP-GNT)</td>
+                      <td><strong>0 BTL</strong></td>
+                      <td>30 BTL</td>
+                      <td><span class="alv-rec-pill">Alt: Emamectin Benzoate 5%</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="alv-led green">🟢</span> In Stock</td>
+                      <td><code>PST-IMID-250</code></td>
+                      <td>Imidacloprid 17.8% SL</td>
+                      <td>1001 (AP-GNT)</td>
+                      <td><strong>280 BTL</strong></td>
+                      <td>80 BTL</td>
+                      <td>Standard Direct Dispatch</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="alv-footer-status">
+                <span>Rows displayed: <strong>4</strong></span>
+                <span>System status: <strong>sy-subrc = 0 (Success)</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-action-footer">
+            <button class="btn primary view-architecture-modal-btn" id="openArchModalBtn">
+              <i class="fas fa-diagram-project"></i> Open Full Architecture & Specification Dialog
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION & STUDENT PATHWAY -->
+    <section id="resume" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="badge-tag"><i class="fas fa-graduation-cap"></i> Academic Pathway</div>
+          <h2>Education &amp; Learning Journey</h2>
+          <p class="section-intro">
+            My engineering foundation in Electronics and Communication Engineering paired with dedicated hands-on specialization in SAP enterprise software engineering.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-building-columns"></i></div>
+            <div class="edu-details">
+              <span class="edu-timeline">2023 - 2027</span>
+              <h3>B.TECH — Electronics and Communication Engineering</h3>
+              <p class="edu-institution">Chalapathi Institute of Engineering and Technology, Guntur</p>
+              <div class="edu-description">
+                Comprehensive technical education combining structured computational problem solving, embedded systems logic, digital electronics, and enterprise software engineering.
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card focus-card">
+            <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="edu-details">
+              <span class="edu-timeline">2026 - Present</span>
+              <h3>SAP ABAP Enterprise Specialization</h3>
+              <p class="edu-institution">Independent Enterprise Training & Practical Implementations</p>
+              <div class="edu-description">
+                Rigorous hands-on development in SAP Data Dictionary (DDIC), Classical & Interactive Reporting, ALV Grid design, Open SQL query performance, Modularization, SmartForms, and S/4HANA ABAP Cloud certification.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT & RECRUITER ENGAGEMENT -->
+    <section id="contact" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="badge-tag verified-badge"><i class="fas fa-paper-plane"></i> Let's Connect</div>
+          <h2>Get In Touch</h2>
+          <p class="section-intro">
+            Currently seeking an entry-level role as an SAP ABAP Developer or ABAP Trainee / Associate Consultant. I would love to connect with recruiters, engineering leads, and mentors.
+          </p>
+        </div>
+
+        <div class="contact-grid-layout">
+          <!-- Direct Channel Cards -->
+          <div class="contact-cards-col">
+            <div class="contact-interactive-box" data-copy="naidugolla286@gmail.com" role="button" tabindex="0" title="Click to copy email">
+              <div class="contact-box-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-box-info">
+                <span class="contact-box-label">Email (Click to copy)</span>
+                <span class="contact-box-val">naidugolla286@gmail.com</span>
+              </div>
+              <span class="copy-hint"><i class="fas fa-copy"></i></span>
+            </div>
+
+            <div class="contact-interactive-box" data-copy="+918179813994" role="button" tabindex="0" title="Click to copy phone number">
+              <div class="contact-box-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-box-info">
+                <span class="contact-box-label">Phone / WhatsApp (Click to copy)</span>
+                <span class="contact-box-val">+91 8179813994</span>
+              </div>
+              <span class="copy-hint"><i class="fas fa-copy"></i></span>
+            </div>
+
+            <div class="contact-interactive-box" data-copy="Andhra Pradesh, India" role="button" tabindex="0">
+              <div class="contact-box-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-box-info">
+                <span class="contact-box-label">Location</span>
+                <span class="contact-box-val">Andhra Pradesh, India</span>
+              </div>
+            </div>
+
+            <div class="social-channels-bar">
+              <a href="https://www.linkedin.com/in/golla-varalakshman-naidu-0730ab280" target="_blank" rel="noopener" class="social-channel-btn linkedin" title="Connect on LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://www.credly.com/badges/3f908b22-cb20-4ac2-b817-a765477d8c02" target="_blank" rel="noopener" class="social-channel-btn credly" title="Verify on Credly">
+                <i class="fas fa-certificate"></i>
+                <span>SAP Credly Badge</span>
+              </a>
+              <a href="https://github.com/Lakshman286" target="_blank" rel="noopener" class="social-channel-btn github" title="GitHub Repository">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Inbound Message Form -->
+          <div class="contact-form-col">
+            <form id="contactForm" class="sap-contact-form" action="https://formspree.io/f/mzzrokyk" method="POST">
+              <div id="formMessage" class="form-feedback-message" role="status" aria-live="polite"></div>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="userName">Your Name / Organization</label>
+                  <input type="text" id="userName" name="name" placeholder="e.g. Jane Doe / SAP Partner" required>
+                </div>
+                <div class="form-field">
+                  <label for="userEmail">Business Email</label>
+                  <input type="email" id="userEmail" name="email" placeholder="e.g. j.doe@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="userSubject">Subject</label>
+                <input type="text" id="userSubject" name="subject" placeholder="Opportunity: SAP ABAP Developer / Interview Invitation">
+              </div>
+
+              <div class="form-field">
+                <label for="userMsg">Message</label>
+                <textarea id="userMsg" name="message" rows="5" placeholder="Share job description, project details, or interview details..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary full-btn">
+                <i class="fas fa-paper-plane"></i> Send Inbound Dispatch
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ENTERPRISE FOOTER -->
+  <footer class="sap-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-title">Golla Varalakshman Naidu</div>
+          <p class="footer-sub">Aspiring SAP ABAP Developer • Core ABAP, DDIC & ABAP Cloud</p>
+        </div>
+
+        <div class="footer-nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certification</a>
+          <a href="#portfolio">Project</a>
+          <a href="#resume">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <span>© <span id="currentYear"></span> Golla Varalakshman Naidu • B.Tech Student &amp; Aspiring SAP Developer.</span>
+        <span class="system-tag-footer"><i class="fas fa-code"></i> Core ABAP &amp; DDIC Specialist</span>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop" aria-hidden="true" title="Return to Top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- ENTERPRISE SPECIFICATION & ARCHITECTURE MODAL -->
+    <div id="portfolioModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose" aria-label="Close dialog">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-media-col">
+          <img id="modalImage" src="pest-advisory-project.png" alt="AGRI MANAGEMENT SYSTEM - SAP GUI Interface">
+          <div class="modal-sys-tags">
+            <span class="badge"><i class="fas fa-desktop"></i> Screen: AGRI MANAGEMENT SYSTEM</span>
+            <span class="badge"><i class="fas fa-hashtag"></i> T-Code: ZAGRI_PEST</span>
+            <span class="badge"><i class="fas fa-user-lock"></i> Login User ID: SMID000RJS</span>
+          </div>
+        </div>
+        <div class="modal-body-col">
+          <div class="modal-badge-row">
+            <span class="tag">SAP GUI Dialog</span>
+            <span class="tag">Core ABAP</span>
+            <span class="tag">DDIC</span>
+            <span class="tag">ALV Grid</span>
+            <span class="tag">SmartForms</span>
+          </div>
+          <h3 id="modalTitle">AGRI MANAGEMENT SYSTEM: Automated Pest Advisory & Stock Control</h3>
+          <p id="modalDesc">
+            An authentic custom SAP enterprise solution developed with custom Dynpro dialog screens, farmer master data architecture, automated pesticide purchase workflows, real-time warehouse inventory validation, and automated SmartForms PDF billing.
+          </p>
+
+          <div class="modal-arch-pillars">
+            <h4>System Implementation Highlights:</h4>
+            <ul>
+              <li><strong>11 Real-Time DDIC Transparent Tables (4.5 Data Design):</strong> Relational architecture covering <code>ZAGRI_FARMER</code>, <code>ZAGRI_CROP</code>, <code>ZAGRI_PESTICIDE</code>, <code>ZAGRI_PEST_CROP</code>, <code>ZAGRI_CROP_PEST</code>, <code>ZAGRI_RECOMMEND</code>, <code>ZAGRI_FERTILIZER</code>, <code>ZAGRI_FERT_CROP</code>, <code>ZAGRI_SALES_HDR</code>, <code>ZAGRI_SALES_ITEM</code>, and <code>ZAGRI_FERT_SALES_ITEM</code>.</li>
+              <li><strong>Business Logic Workflows:</strong> Direct pesticide & fertilizer purchase validation against real-time warehouse inventory.</li>
+              <li><strong>Advisory Recommendation Engine:</strong> Crop-pest mapping matrix (<code>ZAGRI_CROP_PEST</code>) suggesting verified substitutes during stockouts.</li>
+              <li><strong>Scientific Calculation Routines:</strong> Precise dosage computation based on acreage and automated billing total invoice routines.</li>
+              <li><strong>Automated Stock Deduction:</strong> Dynamic deduction of line-item inventory balances upon sales order confirmation.</li>
+              <li><strong>Interactive ALV Reporting:</strong> Real-time stock monitoring (<code>ZAGRI_STOCK_MONITOR</code>) with shortage warnings and audit logs (<code>ZAGRI_RECOMMEND</code>).</li>
+              <li><strong>SmartForms PDF Billing:</strong> Automated generation of invoices, customer receipts, and dosage summaries upon order confirmation.</li>
+            </ul>
+          </div>
+
+          <div class="modal-actions-bar">
+            <a class="btn primary" href="https://www.linkedin.com/in/golla-varalakshman-naidu-0730ab280" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in"></i> Inquire via LinkedIn
+            </a>
+            <a class="btn outline" href="mailto:naidugolla286@gmail.com">
+              <i class="fas fa-envelope"></i> Request Full Technical Specification
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULL CERTIFICATE DOCUMENT MODAL LIGHTBOX -->
+    <div id="certModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="certModalTitle">
+      <div class="modal-backdrop" id="certModalBackdrop"></div>
+      <div class="modal-card cert-modal-card">
+        <button class="modal-close" id="certModalClose" aria-label="Close dialog">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="cert-modal-header">
+          <div class="cert-modal-badges">
+            <span class="tag-pill"><i class="fas fa-building"></i> SAP SE Recognized</span>
+            <span class="tag-pill"><i class="fas fa-check-circle"></i> Credly Verified</span>
+            <span class="tag-pill"><i class="fas fa-calendar-check"></i> Aug 19, 2026 - Aug 20, 2027</span>
+          </div>
+          <h3 id="certModalTitle">SAP Certified – Back-End Developer – ABAP Cloud</h3>
+          <p class="cert-modal-sub">Awarded to: <strong>GOLLA VARALAKSHMAN NAIDU</strong> | Verification Record: <code>3f908b22-cb20-4ac2-b817-a765477d8c02</code></p>
+        </div>
+        <div class="cert-modal-body">
+          <div class="cert-full-image-wrapper">
+            <img src="sap-certificate.jpg" alt="Official SAP Certificate - Golla Varalakshman Naidu" class="cert-full-doc-img">
+          </div>
+          <div class="cert-modal-actions">
+            <a class="btn primary" href="https://www.credly.com/badges/3f908b22-cb20-4ac2-b817-a765477d8c02" target="_blank" rel="noopener">
+              <i class="fas fa-arrow-up-right-from-square"></i> Open Live Credly Badge Record
+            </a>
+            <a class="btn highlight-pdf-btn" href="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf" download="SAP_Certified_BackEnd_Developer_ABAP_Cloud.pdf">
+              <i class="fas fa-file-pdf"></i> Download Official Certificate (PDF)
+            </a>
+            <a class="btn outline" href="sap-certificate.jpg" download="Golla_Varalakshman_Naidu_SAP_Certificate.jpg">
+              <i class="fas fa-image"></i> Download Image (JPG)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
